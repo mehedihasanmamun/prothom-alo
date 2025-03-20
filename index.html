@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>বাংলা নিউজ পোর্টাল</title>
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Noto Sans Bengali', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .logo img {
+            height: 50px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        .extra-links {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        .extra-links a {
+            text-decoration: none;
+            color: #000;
+            font-size: 14px;
+        }
+        .hero {
+            text-align: center;
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 100px 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .news-section {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            gap: 20px;
+        }
+        .left-column {
+            width: 30%;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .right-column {
+            width: 70%;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .main-news {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .news-item {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .news-item img {
+            width: 120px;
+            height: 80px;
+            border-radius: 5px;
+        }
+        .news-item .news-content {
+            flex: 1;
+        }
+        h1 {
+            color: red;
+        }
+        .search-box {
+            margin-top: 10px;
+        }
+        .search-box input, .search-box select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+        }
+        .search-box button {
+            width: 100%;
+            padding: 10px;
+            background: blue;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="Prothom-Alo-logo.jpg" alt="প্রথম আলো">
+        </div>
+        <nav class="nav-links">
+            <a href="#">সর্বশেষ</a>
+            <a href="#">রাজনীতি</a>
+            <a href="#">বাংলাদেশ</a>
+            <a href="#">অপরাধ</a>
+            <a href="#">বিনোদন</a>
+            <a href="#">খেলা</a>
+            <a href="#">চাকরি</a>
+        </nav>
+        <div class="extra-links">
+            <a href="#">🔍 খুঁজুন</a>
+            <a href="#">📅 ই-পেপার</a>
+            <a href="#">🌐 Eng</a>
+            <a href="#">🔑 Login</a>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <h1>সর্বশেষ খবর, সব সময়</h1>
+        <p>বাংলাদেশের সর্বশেষ আপডেট পেতে আমাদের সঙ্গে থাকুন | দেশের প্রতিটি সংবাদ সবার আগে জানতে আমাদের ফলো করুন</p>
+    </section>
+    
+    <section class="news-section">
+        <div class="left-column">
+            <h3>আমার এলাকার খবর</h3>
+            <div class="search-box">
+                <select>
+                    <option>রংপুর বিভাগ</option>
+                    <option>ঢাকা বিভাগ</option>
+                </select>
+                <select>
+                    <option>রংপুর</option>
+                    <option>ঢাকা</option>
+                </select>
+                <select>
+                    <option>রংপুর সদর</option>
+                    <option>মিরপুর</option>
+                </select>
+                <button>খুঁজুন</button>
+            </div>
+        </div>
+        <div class="right-column">
+            <h1>রংপুর সদর</h1>
+            <div class="main-news">
+                <div class="news-item">
+                    <img src="news3.jpg" alt="খবর 3">
+                    <div class="news-content">
+                        <h2 style="color: red;">শিক্ষা খাতে উন্নতির নতুন পরিকল্পনা</h2>
+                        <p>শিক্ষার্থীদের সুবিধার্থে নয়া উদ্যোগ গ্রহণ করা হয়েছে</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="news4.jpg" alt="খবর 4">
+                    <div class="news-content">
+                        <h2 style="color: red;">রংপুরে বন্যার সতর্কতা জারি</h2>
+                        <p>বন্যার কারণে কিছু এলাকা প্লাবিত হওয়ার শঙ্কা</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
